@@ -35,11 +35,6 @@ EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 
-
-# MAILCHIMP_API_KEY = '2b27e89b49274caad256048d88a7df73-us3'
-# MAILCHIMP_DATA_CENTER = 'us20'
-# MAILCHIMP_EMAIL_AUDIENCE_ID = '9a32cf7076'
-
 # Application definition
 
 INSTALLED_APPS = [

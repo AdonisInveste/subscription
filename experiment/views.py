@@ -26,8 +26,8 @@ def customer_subscribe(request):
             subject = "Thank you for joining our community"
             from_email = settings.EMAIL_HOST_USER
             to_email = [instance.email]
-            # subscription_message = "Hi, LET'S DANCE. If you want to unsubscribe got to http://127.0.0.1:8000/experiment/unsubscribe/ "
-            # send_mail(subject=subject, from_email=from_email, recipient_list=to_email, message=subscription_message, fail_silently=False)    
+            subscription_message = "Hi, LET'S DANCE. If you want to unsubscribe got to http://127.0.0.1:8000/experiment/unsubscribe/ "
+            send_mail(subject=subject, from_email=from_email, recipient_list=to_email, message=subscription_message, fail_silently=False)    
 
     context = {'form': form, }
     template = "subscription/subscribe.html"

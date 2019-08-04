@@ -16,9 +16,12 @@
                     {% for message in messages %}
 
                 <div {% if message.tags %} 
-                                class="{{message.tags}" {% endif %} 
+                                class="alert alert-{{ message.tags }}"
+                                {% endif %} 
                                 role="alert">
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
                         {{ message }}
                     </div>
 
@@ -33,7 +36,7 @@
                         {{ form.as_p }}
 
                     <span class="input-group">
-                        <button class="btn btn-default" type="submit"> Subscibe </button>
+                        <button class="btn btn-default" type="submit"> Subscribe </button>
                     </span>
                 </div>
 
