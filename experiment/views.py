@@ -30,7 +30,7 @@ def customer_subscribe(request):
             send_mail(subject=subject, from_email=from_email, recipient_list=to_email, message=subscription_message, fail_silently=False)    
 
     context = {'form': form, }
-    template = "subscription/subscribe.html"
+    template = "experiment/subscribe.html"
 
 
     return render(request, template, context)
@@ -57,7 +57,7 @@ def customer_unsubscribe(request):
 
 
     context = {'form': form, }
-    template = "subscription/unsubscribe.html"
+    template = "experiment/unsubscribe.html"
 
 
     return render(request, template, context)

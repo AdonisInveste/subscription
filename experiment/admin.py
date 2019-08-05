@@ -5,7 +5,7 @@ from .models import CustomerSubscriptionUser
 
 
 class CustomerSubscritpionAd(admin.ModelAdmin):
-    list_display = ('email', 'time_stamp')
+    list_display = ( 'first_name', 'last_name', 'email', 'time_stamp')
 
 
 
